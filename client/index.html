@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Avalon Haney FullStack Tic Tac Toe</title>
+	</head>
+	<body>
+		<div id="app">
+			<div id="form">
+				<form id="start">
+					<input type="text" id="name" placeholder="Name"/>
+					<input type="text" id="room" placeholder="Room"/>
+					<button type="submit" id="joinGame">Create/Join</button>
+				</form>
+			</div>
+			<h1 id="status"></h1>
+			<div id="game">
+				<div class="cell" id="0"></div>
+				<div class="cell" id="1"></div>
+				<div class="cell" id="2"></div>
+				<div class="cell" id="3"></div>
+				<div class="cell" id="4"></div>
+				<div class="cell" id="5"></div>
+				<div class="cell" id="6"></div>
+				<div class="cell" id="7"></div>
+				<div class="cell" id="8"></div>
+			</div>
+		</div>
+
+		<script src="/socket.io/socket.io.js"></script>
+		<script type="module" src="main.js"></script>
+	</body>
+</html>
